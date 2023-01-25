@@ -1,9 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" content="Resident Evil 2 of 1998 by Capcom. Get a preview of the game before purchase">
+        <title>Resident Evil 2</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nosifer">
+        <style>
+            *{
+                color: white;
+                margin:0;
+                padding:0;
+            }
 
+            body {
+                height: auto;
+                width: 100vw;
+                background-color:black;
+            }
+
+            img.background-img{
+                width: 100%; 
+            }
+
+            img.promo{
+                padding:0;
+                margin:0;
+                width:40%;
+            }
+
+            h1{
+                padding:0;
+                margin:0;
+                color: red;
+                font-family: Nosifer;
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: .9rem;
+                border-bottom: solid 1px white;
+                padding: 5px;
+            }
+
+            p.info {
+                text-align: center;
+                font-size: 1.2rem;
+                color: red;
+                text-shadow: 1px 1px darkgray;
+                padding: 10px;
+            }
+
+            p.main {
+                text-align:center;
+                font-size: 1rem;
+                text-shadow: 1px 1px red;
+            }
+
+            .container {  display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: .7fr 0.15fr 1fr 1fr 0.1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "resident_banner resident_banner resident_banner"
+                    "capcom_price capcom_price capcom_price"
+                    "Promo-1 Promo-1 Promo-1"
+                    "Promo-2 Promo-2 Promo-2"
+                    "copyright copyright copyright";
+                }
+
+            .resident_banner { 
+                grid-area: resident_banner; 
+                border-bottom: solid 1px white;
+            }
+
+            .capcom_price { 
+                grid-area: capcom_price;
+            }
+
+            .Promo-1 { 
+                display:grid;
+                grid-area: Promo-1; 
+                border-bottom: solid 1px white;
+                place-items:center;
+            }
+
+            .Promo-2 { 
+                grid-area: Promo-2; 
+                border-bottom: solid 1px white;
+            }
+
+            .copyright { 
+                display:grid;
+                grid-area: copyright; 
+                place-items:center;
+            }
+    
+        </style>
     </head>
     <body>
-        <h1>example</h1>
+        <div class="container">
+            <div class="resident_banner">
+                <img src="https://www.eklecty-city.fr/wp-content/uploads/2012/09/Resident-Evil-2-1998-Banner-01.jpg" class="background-img" alt="Cover photo for Resident Evil 2">
+            </div>
+            <div class="capcom_price">
+                <section>
+                    <p class="info"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/c/cb/20200920122730%21ESRB_2013_Mature.svg/88px-ESRB_2013_Mature.svg.png" style="width:25px; height:30px;"> Warning! Rated M for Mature Audiences Only!
+                    <br>
+                        Purchase Price: $50.00 USD
+                    </p>
+
+                    <h2>&copy;CAPCOM CO, LTD 1998 ALL RIGHTS RESERVED</h2>
+                </section>
+            </div>
+            <div class="Promo-1">
+                <h1>Resident Evil 2</h1>
+                    <p class="main" style="text-align:left;">
+                        Driving through the ruined streets, Leon S. Kennedy and Claire Redfield discover that the only people in sight are zombies.
+                        <br>
+                        Seperated by an explosion, Claire and Leon must make their way through the zombies infested street on Raccoon City and find refuge inside the Raccoon City Police Department.
+                        <br>
+                        Little do they know, getting to the police station will be the easiest part of their journey, as mystery and horror lurks throughout. 
+                    </p>
+                    <img src="https://pbs.twimg.com/media/EP8hVBdWoAAF_AR?format=jpg&name=small" class="promo" alt="Picture of Claire Redfield and Leon S. Kennedy, two playable characters in Resident Evil 2.">
+                    <p class="main">Choose to play as Leon S. Kennedy (left pictured) or Claire Redfield (right pictured)!</p>
+            </div>
+            <div class="Promo-2">
+                <img src="https://iplayoldgames.files.wordpress.com/2013/03/resident-evil-2-4.jpg" style="width: 100%;" alt="Resident Evil 2 Brochure, 1998.">
+            </div>
+            <div class="copyright">
+                <p>&copy;CAPCOM CO, LTD 1998 ALL RIGHTS RESERVED</p>
+                <img src="https://wallpapercave.com/dwp1x/wp3250062.jpg" style="width: 150px; height: auto; padding:0; margin:0;" alt="Capcom logo">
+                
+            </div>
+          </div>
     </body>
 </html>
